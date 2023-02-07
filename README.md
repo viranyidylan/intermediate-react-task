@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Weather App Work Sample Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Before you start
 
-## Available Scripts
+- Go to [OpenWeatherAPI](https://openweathermap.org/api) to sign up and get your own API key
+- Test your API key by making a few API requests to make sure it is working properly
 
-In the project directory, you can run:
+## Timestamp your progress
 
-### `npm start`
+Please start a timer as soon as you begin working on this task and make a note of the time when you finish. This will help us understand the amount of time you spent on the task.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Task 1: Add a details view
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Create a details view that displays more detailed information about each city's weather. The view should display:
+- temperature
+- humidity
+- wind speed
+- 5-day forecast
 
-### `npm test`
+## Task 2: Add lazy loading
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Add lazy loading to the details view so that it is only loaded when the user clicks on a city to view its details, improving the overall performance of the app.
 
-### `npm run build`
+## Task 3: Add caching of API requests
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Add caching to the API requests to reduce the number of API calls and improve performance. You may implement a manual cache or use a caching library, but it does not have to be production suitable.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Submitting your changes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Fork the repository
+2. Clone the repository to your local machine
+3. Make your changes
+4. Push your changes to your fork
+5. Submit a pull request to the original repository
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please note that this work sample test is intended to evaluate your React development skills and understanding of best practices. The quality of your code, comments, and overall design will be evaluated.
