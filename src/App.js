@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+import Card from './components/card/card';
+
 import './App.css';
 
 function App() {
+
+  const apiKey = "0acf5d42d41b7766a7869d72838dfe39";
+
+  const cities = ["Cape Town", "Johannesburg", "Copenhagen", "London", "New York City", "Tokyo", "Paris", "Amsterdam", "Glasgow"];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        {cities.map((city) => (
+          <Card city={city} />
+        ))}
+      </div>
+
     </div>
   );
 }
