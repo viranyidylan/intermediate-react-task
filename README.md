@@ -2,37 +2,33 @@
 
 ## Introduction
 
-This task is designed to evaluate your skills as a React developer. You will be working on a basic weather app, enhancing it with new features and performance optimizations. 
+This task is designed to evaluate your skills as a React developer. You will enhance a basic weather app by adding new features and performance optimizations. Please limit your total working time to 90 minutes, with 45 minutes dedicated to each task. This is NOT a test of going the extra mile or investing extra time.
 
-This task is not a test of how long you're willing to invest, so please do not spend more than 90 minutes total. Pull the request, spend 45 minutes on the first task, move on to the second task for 45 minutes, then submit your pull request with what you've come up with. 
-
-Not completing every subtask within the allotted time does not indicate failure. The goal of these tasks is to see how you approach the problem and how you handle performance considerations, not necessarily to see if you can complete everything in the time frame.
-
+It is important to note that completing every subtask within the time frame is not the ultimate measure of success. The goal of these tasks is to assess your problem-solving skills and approach to performance considerations, rather than just checking if you can finish everything in the given time.
 
 ## Task 1: Show Details Modal
 
 Steps: 
-- Add a button labeled "Details" on each card that, when clicked, will reveal the detailed weather information.
-- The detailed weather information should include the following:
+1. Add a button labeled "Details" on each card that, when clicked, will reveal the detailed weather information.
+2. The detailed weather information should include the following:
         - Humidity
         - Wind speed
         - Visibility
         - Pressure
-- When the user clicks the "Details" button on a card, the detailed information should be displayed in a modal.
-- Optimize the performance of the app so that the detailed information is only fetched when the user clicks the "Details" button, and the information is then cached for future use. You can use a simple in-memory cache to store the results of the API call.
-- To demonstrate performance optimization, the detailed information for each city should only be fetched once, even if the user clicks the "Details" button multiple times.
+3. When the user clicks the "Details" button on a card, the detailed information should be displayed in a modal.
+4. Optimize the performance of the app so that the detailed information is only fetched when the user clicks the "Details" button, and the information is then cached for future use. You can use a simple in-memory cache to store the results of the API call.
+5. To demonstrate performance optimization, the detailed information for each city should only be fetched once, even if the user clicks the "Details" button multiple times.
 
 ## Task 2: Add a Search Bar to the Weather App
 
 Steps:
-- Add a search bar to the top of the app that allows the user to search for cities by name.
-- When the user starts typing in the search bar, a dropdown should appear with suggestions for cities that match what the user has typed so far.
-- When the user selects a city from the dropdown, the detailed weather information for that city should be displayed in a modal.
-- Add a button labeled "Add to Dashboard" to the modal. When the user clicks this button, the selected city should be added to the dashboard of cards, with the detailed weather information displayed.
-- The dashboard of cards should have a button labeled "Remove" on each card. When the user clicks this button, the corresponding card should be removed from the dashboard.
-- Implement a maximum limit of 5 cards on the dashboard, so that users can only add up to 5 cities at a time. If a user tries to add a 6th city, they should see an error message indicating that the limit has been reached.
-- Implement a rate limiting feature to limit the number of API calls that can be made in a given time period.
-- Add lazy loading to the details view so that it is only loaded when the user clicks on a city to view its details, improving the overall performance of the app.
+1. Add a search bar to the top of the app that allows the user to search for cities by name.
+2. When the user starts typing in the search bar, a dropdown should appear with suggestions for cities that match what the user has typed so far.
+3. When the user selects a city from the dropdown, the detailed weather information for that city should be displayed in a modal.
+4. Add a button labeled "Add to Dashboard" to the modal. When the user clicks this button, the selected city should be added to the dashboard of cards, with the detailed weather information displayed.
+5. The dashboard of cards should have a button labeled "Remove" on each card. When the user clicks this button, the corresponding card should be removed from the dashboard.
+6. Implement a maximum limit of 5 cards on the dashboard, so that users can only add up to 5 cities at a time. If a user tries to add a 6th city, they should see an error message indicating that the limit has been reached.
+7. Implement a rate limiting feature to limit the number of API calls that can be made in a given time period.
 
 ## How to Submit
 
