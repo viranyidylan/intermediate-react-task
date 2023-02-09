@@ -3,16 +3,21 @@ import axios from "axios";
 import "./card.css";
 
 function Card({ city }) {
-  const apiKey = "0acf5d42d41b7766a7869d72838dfe39";
-
+  
   const [weather, setWeather] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
+        `http://localhost:3004/weather?city=${city}`
       );
-      setWeather(result.data);
+      console.log(`Result for ${city} is`, result);
+      if (Array.isArray(result.data) && result.data.length) {
+        setWeather(result.data[0]);
+        console.table("Weather: ", weather);
+      } else {
+        console.error("The response from the server is not an array or it's empty.");
+      }
     };
     fetchData();
   }, [city]);
@@ -22,11 +27,11 @@ function Card({ city }) {
       {weather ? (
         <div class="card">
           <div class="container">
-            <h2>{weather.name}</h2>
-            <h1>{weather.main ? Math.round(weather.main.temp) : null}°C</h1>
-            <p>{weather.weather[0].description}</p>
-            <p>H: {Math.round(weather.main.temp_max)}°C</p>
-            <p>L: {Math.round(weather.main.temp_min)}°C</p>
+            <h2>{weather.city}</h2>
+            <h1>{Math.round(weather.temp)}°C</h1>
+            <p>{weather.description}</p>
+            <p>H: {Math.round(weather.temp_max)}°C</p>
+            <p>L: {Math.round(weather.temp_min)}°C</p>
           </div>
         </div>
       ) : (

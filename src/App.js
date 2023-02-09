@@ -5,9 +5,7 @@ import './App.css';
 
 function App() {
 
-  const apiKey = "0acf5d42d41b7766a7869d72838dfe39";
-
-  const cities = ["Cape Town", "Johannesburg", "Copenhagen", "London", "New York City", "Tokyo", "Paris", "Amsterdam", "Glasgow"];
+  const cities = ["Cape Town", "Johannesburg"];
 
   return (
     <div className="App">
