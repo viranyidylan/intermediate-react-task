@@ -11,10 +11,10 @@ It is important to note that completing every subtask within the time frame is n
 Steps: 
 1. Add a button labeled "Details" on each card that, when clicked, will reveal the detailed weather information.
 2. The detailed weather information should include the following:
-        - Humidity
-        - Wind speed
-        - Visibility
-        - Pressure
+    - Humidity
+    - Wind speed
+    - Visibility
+    - Pressure
 3. When the user clicks the "Details" button on a card, the detailed information should be displayed in a modal.
 4. Optimize the performance of the app so that the detailed information is only fetched when the user clicks the "Details" button, and the information is then cached for future use. You can use a simple in-memory cache to store the results of the API call.
 5. To demonstrate performance optimization, the detailed information for each city should only be fetched once, even if the user clicks the "Details" button multiple times.
