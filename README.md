@@ -6,6 +6,18 @@ This task is designed to evaluate your skills as a React developer. You will enh
 
 It is important to note that completing every subtask within the time frame is not the ultimate measure of success. The goal of these tasks is to assess your problem-solving skills and approach to performance considerations, rather than just checking if you can finish everything in the given time.
 
+## The endpoint
+
+This project uses json-server as a fake weather data REST API 
+
+To spin up an instance of json-server on port 3004, run the following command in the terminal:
+
+`json-server --watch db.json --port 3004`
+
+This will start a local server on port 3004 that will serve the data from the db.json file. You can then make requests to the server to get and update data. 
+
+eg `http://localhost:3000/weather`
+
 ## Task 1: Show Details Modal
 
 Steps: 
