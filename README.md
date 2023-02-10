@@ -1,36 +1,57 @@
-# Weather App Work Sample Test
+# React Weather App Assessment
 
-## Before you start
+## Introduction
 
-- Go to [OpenWeatherAPI](https://openweathermap.org/api) to sign up and get your own API key
-- Test your API key by making a few API requests to make sure it is working properly
+This task is designed to evaluate your skills as a React developer. You will enhance a basic weather app by adding new features and performance optimizations. Please limit your total working time to 90 minutes, with 45 minutes dedicated to each task. This is NOT a test of going the extra mile or investing extra time.
 
-## Timestamp your progress
+It is important to note that completing every subtask within the time frame is not the ultimate measure of success. The goal of these tasks is to assess your problem-solving skills and approach to performance considerations, rather than just checking if you can finish everything in the given time.
 
-Please start a timer as soon as you begin working on this task and make a note of the time when you finish. This will help us understand the amount of time you spent on the task.
+## The endpoint
 
-## Task 1: Add a details view
+This project uses json-server as a fake weather data REST API 
 
-Create a details view that displays more detailed information about each city's weather. The view should display:
-- temperature
-- humidity
-- wind speed
-- 5-day forecast
+To spin up an instance of json-server on port 3004, run the following command in the terminal:
 
-## Task 2: Add lazy loading
+`json-server --watch db.json --port 3004`
 
-Add lazy loading to the details view so that it is only loaded when the user clicks on a city to view its details, improving the overall performance of the app.
+This will start a local server on port 3004 that will serve the data from the db.json file. You can then make requests to the server to get and update data. 
 
-## Task 3: Add caching of API requests
+eg `http://localhost:3000/weather`
 
-Add caching to the API requests to reduce the number of API calls and improve performance. You may implement a manual cache or use a caching library, but it does not have to be production suitable.
+## Task 1: Show Details Modal
 
-## Submitting your changes
+Steps: 
+1. Add a button labeled "Details" on each card that, when clicked, will reveal the detailed weather information.
+2. The detailed weather information should include the following:
+    - Humidity
+    - Wind speed
+    - Visibility
+    - Pressure
+3. When the user clicks the "Details" button on a card, the detailed information should be displayed in a modal.
+4. Optimize the performance of the app so that the detailed information is only fetched when the user clicks the "Details" button, and the information is then cached for future use. You can use a simple in-memory cache to store the results of the API call.
+5. To demonstrate performance optimization, the detailed information for each city should only be fetched once, even if the user clicks the "Details" button multiple times.
+
+## Task 2: Add a Search Bar to the Weather App
+
+Steps:
+1. Add a search bar to the top of the app that allows the user to search for cities by name.
+2. When the user starts typing in the search bar, a dropdown should appear with suggestions for cities that match what the user has typed so far.
+3. When the user selects a city from the dropdown, the detailed weather information for that city should be displayed in a modal.
+4. Add a button labeled "Add to Dashboard" to the modal. When the user clicks this button, the selected city should be added to the dashboard of cards, with the detailed weather information displayed.
+5. The dashboard of cards should have a button labeled "Remove" on each card. When the user clicks this button, the corresponding card should be removed from the dashboard.
+6. Implement a maximum limit of 5 cards on the dashboard, so that users can only add up to 5 cities at a time. If a user tries to add a 6th city, they should see an error message indicating that the limit has been reached.
+7. Implement a rate limiting feature to limit the number of API calls that can be made in a given time period.
+
+## How to Submit
 
 1. Fork the repository
 2. Clone the repository to your local machine
-3. Make your changes
+3. Create a branch for task 1 and make your changes 
+4. Create a branch for task 2 and your changes
 4. Push your changes to your fork
 5. Submit a pull request to the original repository
+6. You can comment your PR with next steps, blockers, and comments if you would like
 
-Please note that this work sample test is intended to evaluate your React development skills and understanding of best practices. The quality of your code, comments, and overall design will be evaluated.
+Note: Please submit the pull request within the 90 minute time window
+
+Good luck, and we look forward to reviewing your submission!
