@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This task is designed to evaluate your skills as a React developer. You will enhance a basic weather app by adding new features and performance optimizations. Please limit your total working time to 90 minutes, with 45 minutes dedicated to each task. This is NOT a test of going the extra mile or investing extra time.
+This task is designed to evaluate your skills as a React developer. You will enhance a basic weather app by adding new features and performance optimizations. Please limit your total working time to 90 minutes, with 45 minutes dedicated to each task. This test is not about going the extra mile or investing extra time.
 
 It is important to note that completing every subtask within the time frame is not the ultimate measure of success. The goal of these tasks is to assess your problem-solving skills and approach to performance considerations, rather than just checking if you can finish everything in the given time.
 
