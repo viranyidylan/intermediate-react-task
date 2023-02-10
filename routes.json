@@ -1,0 +1,3 @@
+{
+  "/cities/:name": "/city_details?name=:name"
+}

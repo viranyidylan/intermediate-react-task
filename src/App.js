@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="App">
       <div>
-        {cities.map((city) => (
-          <Card city={city} />
+        {cities.map((name) => (
+          <Card city={name} />
         ))}
       </div>
 

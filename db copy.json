@@ -1,5 +1,5 @@
 {
-  "cities": [
+  "weather": [
     {
       "name": "Cape Town",
       "description": "Partly cloudy",
@@ -36,7 +36,7 @@
       "temp_min": 8
     }
   ],
-  "city_details": [
+  "cities": [
         {
       "name": "Cape Town",
       "description": "Partly cloudy",
