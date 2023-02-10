@@ -1,4 +1,4 @@
-# React Weather App Assessment
+# ⚛️ React Weather App Assessment
 
 ## Introduction
 
