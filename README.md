@@ -24,7 +24,7 @@ As a user, I want to have a search bar that I can use to search for cities with 
 
 Steps:
 1. Add a search bar to the top of the app that allows the user to search for cities by name.
-2. When the user starts typing in the search bar, a dropdown should appear with suggestions for cities that match what the user has typed so far (You can use the endpoint: `http://localhost:3004/cities?name={SearchTerm}`).
+2. When the user starts typing in the search bar, a dropdown should appear with suggestions for cities that match what the user has typed so far (You should use the endpoint: `http://localhost:3004/cities?name_like=${SearchTerm}`).
 3. When the user selects a city from the dropdown, the detailed weather information for that city should be displayed in a modal.
 4. Add a button labeled "Add to Dashboard" to the modal. When the user clicks this button, the selected city should be added to the dashboard of cards, with the detailed weather information displayed.
 5. The dashboard of cards should have a button labeled "Remove" on each card. When the user clicks this button, the corresponding card should be removed from the dashboard.
